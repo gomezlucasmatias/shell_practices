@@ -9,3 +9,5 @@ list=('uno' 'dos' 'tres')
 
 echo "${name}"
 echo "My name is ${name} I am ${age} years old"
+echo "5 + 8 = $((5 + 8))"
+echo "5 - 8 = $((5 - 8))"
