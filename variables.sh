@@ -11,3 +11,6 @@ echo "${name}"
 echo "My name is ${name} I am ${age} years old"
 echo "5 + 8 = $((5 + 8))"
 echo "5 - 8 = $((5 - 8))"
+echo "8 : 2 = $((8 / 2))"
+echo "8 * 2 = $((8 * 2))"
+
