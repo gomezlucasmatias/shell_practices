@@ -10,6 +10,7 @@ if [ $validador -eq 1 ]; then
 fi
 
 # Mostrar imc
+echo "$imc"
 
 if [ $imc -lt 18.5 ]; then
   echo "Con $imc estás bajo de peso 💀"
