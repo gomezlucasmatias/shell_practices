@@ -4,12 +4,12 @@ read -p "Dame tu peso en kg " peso
 read -p "Dame tu altura en Mts " altura
 
 # Controlar que el peso y la altura no sean negativos o 0
-if [ $peso -gt 0 && $altura -gt 0 ]; then
+validador=$(echo "peso > 0 && altura > 0" | bc -l)
+if [ $validador -eq 1 ]; then
   imc=$(echo "scale=1; $peso / ($altura * $altura)" | bc)
 fi
 
 # Mostrar imc
-echo $imc
 
 if [ $imc -lt 18.5 ]; then
   echo "Con $imc estás bajo de peso 💀"
